@@ -99,15 +99,7 @@ const TestComponent = () => {
   };
 
   return (
-    <Paper
-      elevation={3}
-      style={{
-        width: "50%",
-        marginLeft: "auto",
-        marginRight: "auto",
-        marginTop: "20px",
-      }}
-    >
+    <Paper elevation={3}>
       <AlertDialogClear
         showDialog={showDialogClear}
         closeDialog={handleCloseAlertDialogClear}

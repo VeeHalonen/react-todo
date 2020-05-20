@@ -5,6 +5,7 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "../theme";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
           spacing={2}
           justify="center"
           style={{
-            marginTop: "20px",
+            marginTop: "30px",
           }}
         >
           <Grid item>
@@ -28,7 +29,19 @@ export default function Home() {
             </Typography>
           </Grid>
         </Grid>
-        <ToDoList />
+        <Grid
+          container
+          justify="center"
+          style={{
+            marginLeft: "auto",
+            marginRight: "auto",
+            marginTop: "30px",
+          }}
+        >
+          <Grid item xs={12} sm={6}>
+            <ToDoList />
+          </Grid>
+        </Grid>
       </main>
       <footer></footer>
     </ThemeProvider>

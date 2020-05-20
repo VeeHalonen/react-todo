@@ -77,10 +77,7 @@ const ListComponent = (props) => {
             >
               <EditIcon />
             </Button>
-            <Button
-              onClick={() => props.onDelete(props.index)}
-              //style={{ marginRight: 0 }}
-            >
+            <Button onClick={() => props.onDelete(props.index)}>
               <DeleteIcon />
             </Button>
           </Grid>
