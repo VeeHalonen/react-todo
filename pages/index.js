@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import ToDoList from "../components/ToDoList";
 import { ThemeProvider } from "@material-ui/core/styles";
+import theme from "../theme";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 
